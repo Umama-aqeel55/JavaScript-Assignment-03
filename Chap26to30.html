@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // CHAPTER 26 TO 30
+
+        // Q1
+        document.write("<h1>Question no: 1</h1>")
+        var number = parseFloat(prompt("Enter a positive integer"));
+        document.write("<h4>Number:</h4>" + number + "<h4> Round off Value:</h4>" + Math.round(number) + "<h4>Floor Value:</h4>" + Math.floor(number) + "<h4>Ceil Value:</h4>" + Math.ceil(number));
+
+        //Q2
+        document.write("<h1>Question no: 2</h1>")
+        var number = parseFloat(prompt("Enter a a negative floating point number "));
+        document.write("<h4>Number:</h4>" + number + "<h4> Round off Value:</h4>" + Math.round(number) + "<h4>Floor Value:</h4>" + Math.floor(number) + "<h4>Ceil Value:</h4>" + Math.ceil(number));
+
+        // Q3
+        document.write("<h1>Question no: 3</h1>")
+        var num = parseFloat(prompt("Enter a number"));
+        document.write("The absolute value of" + " " + num + "is " + Math.abs(num));
+
+        //Q4
+        document.write("<h1>Question no: 4</h1>")
+        var diceValue = Math.floor(Math.random() * 6 + 1);
+        document.write("Random dice value:" + diceValue);
+
+        //Q5
+        document.write("<h1>Question no: 5</h1>")
+        var random = Math.random();
+        var coin = random < 0.5 ? "Heads" : "Tail";
+        document.write("Random coin value: " + " " + coin);
+
+        //Q6
+        document.write("<h1>Question no: 6</h1>")
+        var randomNumber = Math.floor(Math.random() * 100 + 1);
+        document.write("Random number between 1 and 100:" + randomNumber);
+
+        //Q7
+        document.write("<h1>Question no: 7</h1>")
+        var weightInput = prompt("Enter your weight in kilograms");
+        var weight = parseFloat(weightInput.replace(/[^\d.]/g, ""));
+        document.write(`The weight of user is ${weight} kilograms`);
+
+        //Q8
+        document.write("<h1>Question no: 8</h1>")
+        var secretNumber = Math.floor(Math.random() * 10) + 1;
+        var userInput = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+        if (userInput === secretNumber) {
+            document.write("Congratulations! You guessed the secret number.");
+        } else {
+            document.write("Try Again!");
+        }
+    </script>
+</body>
+
+</html>
